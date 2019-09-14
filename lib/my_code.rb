@@ -17,7 +17,7 @@
 end
 
 
-def reduce(source_array)
+def reduce(source_array, starting_point)
      total = 0
      
     if block_given?
@@ -35,7 +35,7 @@ def reduce(source_array)
   end
 end
 
- reduce([1,2,3,4]) { |x| x  }
+ reduce([1,2,3,4]) { |x, m| x + m  }
 
 
 
