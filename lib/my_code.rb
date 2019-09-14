@@ -17,13 +17,16 @@
 end
 
 
-def reduce(source_array, sp=nil)
-    #source_array.reduce(:+)
-     total = 
-    counter = 0
-    
+def reduce(source_array, starting_point=nil)     
+     if starting_point
+         total = starting_point
+         counter = 0
+    else
+      total = source_array[0]
+      counter = 1
+      
    while counter < source_array.size do
-    yield(source_array[counter]+= total)
+    yield(total, source_array[counter])
      counter +=1
  end
    total
