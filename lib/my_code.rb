@@ -17,7 +17,7 @@
 end
 
 
-def reduce(source_array, starting_point=nil)      if block_given?
+def reduce(source_array, starting_point=nil) 
      if starting_point
          total = starting_point
          counter = 0
