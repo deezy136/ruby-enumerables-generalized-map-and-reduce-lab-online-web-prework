@@ -17,9 +17,8 @@
 end
 
 
-def reduce( source_array)
-  m = 0
-    total = 0
+def reduce(source_array)
+     total = 0
      
      if block_given?
        
@@ -32,7 +31,6 @@ def reduce( source_array)
     end
     
     
-
     p total
   else
     puts "Hey! No block was given!"
