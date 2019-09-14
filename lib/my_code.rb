@@ -17,7 +17,7 @@
 end
 
 
-def reduce(source_array, starting_point = 0)
+def reduce(source_array)
     #source_array.reduce(:+)
      total = starting_point
     counter = 0
