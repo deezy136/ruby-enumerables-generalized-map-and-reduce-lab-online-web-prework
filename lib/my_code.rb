@@ -17,26 +17,19 @@
 end
 
 
-def reduce(source_array, starting_point)
-     total = 0
-     
-    if block_given?
-       
-    i = 0
-    while i < source_array.length
-     total = total + yield(source_array[i])
-           i = i + 1
-    end
+def reduce(source_array, starting_point = 0)
+    #source_array.reduce(:+)
+     total = starting_point
+    counter = 0
     
-    
-    total
-  else
-    puts "Hey! No block was given!"
-  end
-end
+   while counter < source_array.size do
+   total += yield(source_array[counter])
+     counter +=1
+ end
+   total
+ end 
 
- reduce([1,2,3,4]) { |x, m| x + m  }
-
+ reduce([1,2,3,4], 0) { |x, m| x + m  }
 
 
 
