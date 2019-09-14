@@ -29,7 +29,7 @@ def reduce(source_array, starting_point = 0)
    total
  end 
 
- reduce([1,2,3,4], 0) { |x, m| x + m  }
+ reduce([1,2,3,4]) { |x, m=0| x + m  }
 
 
 
