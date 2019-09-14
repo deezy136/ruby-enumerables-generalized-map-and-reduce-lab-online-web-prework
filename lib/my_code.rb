@@ -23,13 +23,13 @@ def reduce(source_array, starting_point = 0)
     counter = 0
     
    while counter < source_array.size do
-   total += yield(source_array[counter])
+    yield(source_array[counter]+= total)
      counter +=1
  end
    total
  end 
 
- reduce([1,2,3,4]) { |x, m=0| x + m  }
+ reduce([1,2,3,4]) { |x | x + m  }
 
 
 
