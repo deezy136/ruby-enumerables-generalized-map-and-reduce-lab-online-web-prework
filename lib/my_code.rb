@@ -17,9 +17,9 @@
 end
 
 
-def reduce(source_array)
+def reduce(source_array, sp=nil)
     #source_array.reduce(:+)
-     total = starting_point
+     total = 
     counter = 0
     
    while counter < source_array.size do
@@ -29,7 +29,7 @@ def reduce(source_array)
    total
  end 
 
- reduce([1,2,3,4]) { |x , m| x + m  }
+ reduce([1,2,3,4])
 
 
 
