@@ -1,7 +1,6 @@
   def map(array)
     final_array = []
-    
-    i = 0 
+        i = 0 
     while i < array.size 
      final_array << yield(array[i])
      i += 1 
