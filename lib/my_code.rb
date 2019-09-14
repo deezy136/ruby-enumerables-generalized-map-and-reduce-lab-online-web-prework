@@ -24,7 +24,8 @@ def reduce(source_array, starting_point=nil)
     else
       total = source_array[0]
       counter = 1
-      
+    end
+    
    while counter < source_array.size do
     yield(total, source_array[counter])
      counter +=1
