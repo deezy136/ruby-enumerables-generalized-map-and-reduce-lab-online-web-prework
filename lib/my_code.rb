@@ -37,7 +37,7 @@ def reduce(source_array)
   end
 end
 
- reduce([1,2,3,4]) { |x, m| x  }
+ reduce([1,2,3,4]) { |x| x  }
 
 
 
