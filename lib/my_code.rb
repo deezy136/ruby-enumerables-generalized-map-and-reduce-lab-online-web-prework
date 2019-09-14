@@ -20,18 +20,16 @@ end
 def reduce(source_array)
      total = 0
      
-     if block_given?
+    if block_given?
        
     i = 0
-    
-    
     while i < source_array.length
      total = total + yield(source_array[i])
            i = i + 1
     end
     
     
-    p total
+    total
   else
     puts "Hey! No block was given!"
   end
